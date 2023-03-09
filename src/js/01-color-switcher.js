@@ -11,8 +11,11 @@ startBtnRef.addEventListener('click', startBtnClickHandler);
 stopBtnRef.addEventListener('click', stopBtnClickHandler);
 
 function startBtnClickHandler(evt) {
+  // timerId = setInterval(() => {
+  //   console.log(`I love async JS!  ${Math.random()}`);
+  // }, 1000);
+
   timerId = setInterval(() => {
-    console.log(`I love async JS!  ${Math.random()}`);
     bodyRef.style.backgroundColor = `${getRandomHexColor()}`;
   }, 1000);
   startBtnRef.disabled = true;
