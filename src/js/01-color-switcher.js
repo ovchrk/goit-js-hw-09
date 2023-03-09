@@ -3,8 +3,8 @@ function getRandomHexColor() {
 }
 
 const bodyRef = document.querySelector('body');
-const startBtnRef = document.querySelector('[data-start]');
-const stopBtnRef = document.querySelector('[data-stop]');
+const startBtnRef = document.querySelector('button[data-start]');
+const stopBtnRef = document.querySelector('button[data-stop]');
 console.log(stopBtnRef);
 
 startBtnRef.addEventListener('click', startBtnClickHandler);
