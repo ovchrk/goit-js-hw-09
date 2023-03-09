@@ -29,7 +29,7 @@ valueRef.forEach(value => {
   value.style.fontSize = '30px';
   value.style.textAlign = 'center';
 });
-startBtnRef.setAttribute('disabled', '');
+startBtnRef.disabled = false;
 startBtnRef.addEventListener('click', startBtnClickHandler);
 
 let currentTime = null;
@@ -53,7 +53,7 @@ const fp = flatpickr('#datetime-picker', {
     }
   },
   onChange() {
-    startBtnRef.removeAttribute('disabled');
+    startBtnRef.disabled = true;
     fp.close();
   },
 });
