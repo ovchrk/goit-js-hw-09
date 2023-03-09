@@ -30,7 +30,7 @@ valueRef.forEach(value => {
   value.style.textAlign = 'center';
 });
 let timerId = null;
-startBtnRef.disabled = false;
+startBtnRef.disabled = true;
 startBtnRef.addEventListener('click', startBtnClickHandler);
 
 let currentTime = null;
@@ -54,7 +54,7 @@ const fp = flatpickr('#datetime-picker', {
     }
   },
   onChange() {
-    startBtnRef.disabled = true;
+    startBtnRef.disabled = false;
     fp.close();
   },
 });
