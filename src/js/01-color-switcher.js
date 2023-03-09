@@ -15,10 +15,8 @@ function startBtnClickHandler(evt) {
     console.log(`I love async JS!  ${Math.random()}`);
     bodyRef.style.backgroundColor = `${getRandomHexColor()}`;
   }, 1000);
-
   startBtnRef.setAttribute('disabled', '');
 }
-
 function stopBtnClickHandler(evt) {
   clearInterval(timerId);
   startBtnRef.removeAttribute('disabled');

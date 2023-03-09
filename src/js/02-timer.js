@@ -29,9 +29,9 @@ valueRef.forEach(value => {
   value.style.fontSize = '30px';
   value.style.textAlign = 'center';
 });
-
-startBtnRef.addEventListener('click', startBtnClickHandler);
 startBtnRef.setAttribute('disabled', '');
+startBtnRef.addEventListener('click', startBtnClickHandler);
+
 let currentTime = null;
 let selectedDate = null;
 
