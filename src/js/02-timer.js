@@ -11,6 +11,7 @@ const secondsRef = document.querySelector('span[data-seconds]');
 const fieldsRef = document.querySelectorAll('.field');
 const valueRef = document.querySelectorAll('.value');
 const timerEl = document.querySelector('.timer');
+startBtnRef.disabled = true;
 
 timerEl.style.display = 'flex';
 timerEl.style.gap = '30px';
@@ -53,7 +54,7 @@ const fp = flatpickr('#datetime-picker', {
     }
   },
   onChange() {
-    startBtnRef.disabled = true;
+    startBtnRef.disabled = false;
     fp.close();
   },
 });
