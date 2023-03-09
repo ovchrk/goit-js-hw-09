@@ -5,16 +5,13 @@ function getRandomHexColor() {
 const bodyRef = document.querySelector('body');
 const startBtnRef = document.querySelector('button[data-start]');
 const stopBtnRef = document.querySelector('button[data-stop]');
-console.log(stopBtnRef);
 
 startBtnRef.addEventListener('click', startBtnClickHandler);
 stopBtnRef.addEventListener('click', stopBtnClickHandler);
 
-function startBtnClickHandler(evt) {
-  // timerId = setInterval(() => {
-  //   console.log(`I love async JS!  ${Math.random()}`);
-  // }, 1000);
+let timerId = null;
 
+function startBtnClickHandler(evt) {
   timerId = setInterval(() => {
     bodyRef.style.backgroundColor = `${getRandomHexColor()}`;
   }, 1000);
