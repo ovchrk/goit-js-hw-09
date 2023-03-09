@@ -29,6 +29,7 @@ valueRef.forEach(value => {
   value.style.fontSize = '30px';
   value.style.textAlign = 'center';
 });
+let timerId = null;
 startBtnRef.disabled = false;
 startBtnRef.addEventListener('click', startBtnClickHandler);
 
