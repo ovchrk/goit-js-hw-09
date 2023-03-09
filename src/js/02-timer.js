@@ -30,8 +30,8 @@ valueRef.forEach(value => {
   value.style.textAlign = 'center';
 });
 
-startBtnRef.setAttribute('disabled', 'disabled');
 startBtnRef.addEventListener('click', startBtnClickHandler);
+startBtnRef.setAttribute('disabled', '');
 let currentTime = null;
 let selectedDate = null;
 

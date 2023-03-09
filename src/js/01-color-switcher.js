@@ -16,7 +16,7 @@ function startBtnClickHandler(evt) {
     bodyRef.style.backgroundColor = `${getRandomHexColor()}`;
   }, 1000);
 
-  startBtnRef.setAttribute('disabled', 'disabled');
+  startBtnRef.setAttribute('disabled', '');
 }
 
 function stopBtnClickHandler(evt) {
