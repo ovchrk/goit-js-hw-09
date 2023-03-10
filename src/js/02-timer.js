@@ -48,8 +48,11 @@ const fp = flatpickr('#datetime-picker', {
     console.log(`Selected time and date`, selectedDates[0]);
     if (Date.now() > selectedDates[0].getTime()) {
       Notiflix.Notify.warning('Please choose a date in the future');
+      startBtnRef.disabled = true;
+      startBtnRef.setAttribute('disabled', '');
     } else {
       startBtnRef.disabled = false;
+      startBtnRef.removeAttribute('disabled');
       currentTime = Date.now();
       selectedDate = selectedDates[0].getTime();
     }
