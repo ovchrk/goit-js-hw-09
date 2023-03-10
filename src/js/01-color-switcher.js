@@ -19,6 +19,6 @@ function startBtnClickHandler(evt) {
 }
 function stopBtnClickHandler(evt) {
   clearInterval(timerId);
-  startBtnRef.disabled = false;
+  startBtnRef.removeAttribute('disabled');
   // startBtnRef.removeAttribute('disabled');
 }
